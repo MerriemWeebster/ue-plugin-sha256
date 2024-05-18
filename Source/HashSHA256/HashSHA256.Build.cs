@@ -18,7 +18,7 @@ public class HashSHA256 : ModuleRules
 	public HashSHA256(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		
+		PrecompileForTargets = PrecompileTargetsType.Any;
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
